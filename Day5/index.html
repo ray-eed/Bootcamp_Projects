@@ -13,8 +13,14 @@
         <input id="e_mail" type="email" name="email" placeholder="Email"><br><br>
         <label for="pass_word">Password:</label>
         <input id="pass_word" type="passwor" name="password" placeholder="Password"><br><br>
-        <label for="support">Support:</label>
-        <textarea id="support" name="entry"></textarea><br><br>
+        <label for="role">Role:</label>
+        <select name="role" id="role">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+            <option value="guest">Guest</option>
+        </select><br><br>
+        <label for="issue">Any issues that you faced?:</label><br>
+        <textarea id="issue" name="entry"></textarea><br><br>
         <button type="Submit">Submit</button>
     </form>
 </body>
