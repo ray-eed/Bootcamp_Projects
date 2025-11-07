@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Club Interview Application</title>
+</head>
+<header>
+    <nav>
+        <h1>XYZ Club Interview Application</h1>
+        <div><a href="index.html">Home</a></div>
+        <div> <a href="about.html">About Us</a></div>
+        <div> <a href="interview.html">Interview Form</a></div>
+    </nav>
+</header>
+<body>
+    <section>
+        <div>
+        <h2>Welcome to our XYZ club</h2>  
+        <p>Please fill out the form below to apply for an interview.</p>
+        </div>
+        <div>
+        <h3>Personal Information</h3>
+        <form action="/submit_interview" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <div><h4>Department Selection</h4>
+            <p>Please select the department you are applying for:</p>
+            <input type="radio" id="choose_department" name="choose_department" value="HR" required>
+            <label for="choose_department">Human Resource and Managment</label><br>
+            <input type="radio" id="choose_department" name="choose_department" value="M&D" required>
+            <label for="choose_department">Marketing and Designing</label><br>
+            <input type="radio" id="choose_department" name="choose_department" value="EPR" required>
+            <label for="choose_department">Editorial and Press Release</label><br>
+            <input type="radio" id="choose_department" name="choose_department" value="FEM" required>
+            <label for="choose_department">Finance and Event Management</label><br>
+            </div>
+            <br>
+            <label for="interview_date">Preferred Interview Date:</label><br>
+            <input type="date" id="interview_date" name="interview_date" required><br><br>
+            <label for="interview_time">Preferred Interview Time:</label><br>
+            <input type="time" id="interview_time" name="interview_time" required><br><br>
+            <input type="submit" value="Submit Application">
+        </form>
+        </div>
+    </section>
+</body>
+<footer>
+        <p>
+            2024 XYZ Club. All rights reserved.
+        </p>
+    </footer>
+</html>
